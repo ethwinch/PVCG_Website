@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>News | Pleasent Village Community Garden</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,7 +18,7 @@
                         <a class="dropBtn" href="javascript:void(0)">About</a>
                         <div class="dropDown-content">
                             <a href="history.html">History</a>
-                            <a href="#garden-photos">Garden Photos</a>
+                            <a href="#garden-photos.html">Garden Photos</a>
                             <a href="partners.html">Partners & Sponsors</a>
                         </div>
                     </li>
@@ -25,12 +26,12 @@
                             <li class="dropDown">
                                 <a class="dropBtn" href="javascript:void(0)" href="#garden-information">Garden Information</a>
                                 <div class="dropDown-content">
-                                    <a href="#hours">Hours</a>
-                                    <a href="#events">Events</a>
-                                    <a href="#rules">Garden Rules</a>
-                                    <a href="#garden-officers">Garden Officers</a>
-                                    <a href="#garden-member-rules-and-requirements">Garden Member Rules & Requirements</a>
-                                    <a href="#garden-member-responsibilities">Garden Member Responsibilities</a>
+                                    <a href="hours.html">Hours</a>
+                                    <a href="events.html">Events</a>
+                                    <a href="rules.html">Garden Rules</a>
+                                    <a href="officers.html">Garden Officers</a>
+                                    <a href="garden-member-rules-and-requirements.html">Garden Member Rules & Requirements</a>
+                                    <a href="garden-member-responsibilities.html">Garden Member Responsibilities</a>
                                 </div>   
                             </li>
                         <li><a href="membership.html">Membership</a></li>
@@ -64,6 +65,7 @@
                         <div class="article-text">
                             <h2>Green Thumb Dates & Deadlines</h2>
                             <p>The Harvest Fair Competition Submission deadline is <b>Friday, August 14th</b>. To learn more...</p>
+                            <a class="classicBtn" href="news-story1.html">Read More</a>
                         </div>
                     </article>
                     <article>
@@ -73,6 +75,7 @@
                         <div class="article-text">
                             <h2>Garden Gathering RSVP</h2>
                             <p>You are invited to the <b>East Harlem Community Gardens Gathering</b> on Saturday, August 10th from 5pm - 7pm at Harlem Rose Garden. After a summer...</p>
+                            <a class="classicBtn" href="news-story2.html">Read More</a>
                         </div>
                     </article>
                     <article>
@@ -82,8 +85,10 @@
                         <div class="article-text">
                             <h2>Soil Delivery Limit</h2>
                             <p>Due to overwhelming demand, GreenThumb currently has limited ability to provide soil to community gardens this season...</p>
+                            <a class="classicBtn" href="news-story3.html">Read More</a>
                         </div>
                     </article>
+                    <!--
                     <article>
                         <div class="news-img">
                             <img src="https://help.gardeningexpress.co.uk/wp-content/uploads/2023/01/AdobeStock_207525647-1024x683.jpeg" alt="insert alt text here">
@@ -93,24 +98,7 @@
                             <p>Lorem ipsum dolor amet...</p>
                         </div>
                     </article>
-                    <article>
-                        <div class="news-img">
-                            <img src="https://help.gardeningexpress.co.uk/wp-content/uploads/2023/01/AdobeStock_207525647-1024x683.jpeg" alt="insert alt text here">
-                        </div>
-                        <div class="article-text">
-                            <h2>Heading</h2>
-                            <p>Lorem ipsum dolor amet...</p>
-                        </div>
-                    </article>
-                    <article>
-                        <div class="news-img">
-                            <img src="https://help.gardeningexpress.co.uk/wp-content/uploads/2023/01/AdobeStock_207525647-1024x683.jpeg" alt="insert alt text here">
-                        </div>
-                        <div class="article-text">
-                            <h2>Heading</h2>
-                            <p>Lorem ipsum dolor amet...</p>
-                        </div>
-                    </article>
+                    -->
                 </div>
                 <div class="home-btn">
                     <li>
@@ -168,7 +156,7 @@
             <ul class="footer-nav">
             <li>
                 <a href="history.html">History</a>
-                <a href="garden-photos">Photos</a>
+                <a href="garden-photos.html">Photos</a>
                 <a href="partners.html">Partners & Sponsors</a>
                 <a href="compost.html">Compost</a>
                 <a href="membership.html">Membership</a>
@@ -179,12 +167,12 @@
             </div>
             <ul class="footer-nav">
                 <li>
-                    <a href="index.html">Events</a>
-                    <a href="hours">Hours</a>
-                    <a href="rules">Garden Rules</a>
-                    <a href="garden-officers">Garden Officers</a>
-                    <a href="garden-member-rules-and-requirements">Member Rules & Requirements</a>
-                    <a href="garden-member-responsibilities">Member Responsibilities</a>
+                    <a href="events.html">Events</a>
+                    <a href="hours.html">Hours</a>
+                    <a href="rules.html">Garden Rules</a>
+                    <a href="garden-officers.html">Garden Officers</a>
+                    <a href="garden-member-rules-and-requirements.html">Member Rules & Requirements</a>
+                    <a href="garden-member-responsibilities.html">Member Responsibilities</a>
                 </li>
             </ul>
         </article>
@@ -200,27 +188,18 @@
 <style>
     /*PHONES*/
     @media (max-width: 600px){
-        body{
-            margin-left: 6rem;
-            margin-right: 6rem;
+        .News{
+            background-image: linear-gradient(#012014 16%, rgba(0, 0, 0, 0.7), #012014 98%), url(https://i.imgur.com/7AyZTU4.jpeg);
         }
-        h1{
-            font-size: 40px;
-        }
-        h2{
-            font-size: 28px;
-        }
-        p{
-            font-size: 18px;
-        }
-
-
-
+        
         .News > .news-container{
             margin-right: 2rem;
             margin-left: 2rem;
         }
 
+        .News > .news-container > .news-story > article > .article-text{
+            padding-bottom: 6rem;
+        }
 
         .News > .news-container > .news-story > article > .news-img > img{
             object-fit: cover;
@@ -231,6 +210,7 @@
             object-fit: cover;
             height: 300px;
             width: 100%;
+            border-radius: 12px;
         }
         .News > .news-container > li > a{
             font-size: 30px;
@@ -244,66 +224,14 @@
         }
         .News > .news-container > .home-btn > li > a{
             font-size: 24px;
-        }
-
-
-
-
-        .footer > .footer-text{
-            margin-top: 4rem;
-            margin-bottom: 2rem;
-
-            margin-left: 4rem;
-            margin-right: 4rem;  
-        }
-
-        .footer > .footer-text > .sect1 > .contact-container > h3{
-            margin-top: 44px;
-            margin-bottom: 44px;
-        }
-        div.footer > section.footer-text > article.sect1 > h3{
-            margin-bottom: 44px;
-        }
-        .footer > .footer-text > .sect1 > p{
-            padding: 12px 12px;
-            font-size: 16px;
-        }
-        .footer > .footer-text > .sect1 > .contact-container > .contact-container-bottom > p{
-            font-size: 16px;
-        }
-        .footer > .footer-text > .sect1 > .contact-container > .contact-container-top > p{
-            font-size: 16px;
-        }
-        .footer > .footer-text > .sect1{
-            width: 100%;
-        }
-        .footer > .footer-text > .sect2{
-            width: 100%;
-            margin-top: 5rem;
-        }
-        .footer > .footer-text > .sect3{
-            width: 100%;
-            margin-top: 4rem;
         }
     }
 
 /*TABLETS*/
     @media (min-width: 600px) and (max-width: 900px){
-        body{
-            margin-left: 6rem;
-            margin-right: 6rem;
+        .News{
+            background-image: linear-gradient(#012014 16%, rgba(0, 0, 0, 0.7), #012014 98%), url(https://i.imgur.com/7AyZTU4.jpeg);
         }
-        h1{
-            font-size: 46px;
-        }
-        h2{
-            font-size: 32px;
-        }
-        p{
-            font-size: 24px;
-        }
-
-
         .News > .news-container{
             margin-right: 4rem;
             margin-left: 4rem;
@@ -312,6 +240,11 @@
             width: 100%;
             margin-top: 2rem;
         }
+
+        .News > .news-container > .news-story > article > .article-text{
+            padding-bottom: 4rem;
+        }
+
         .News > .news-container > div > article > .article-text{
             width: 100%;
         }
@@ -325,96 +258,27 @@
             object-fit: cover;
             height: 300px;
             width: 100%;
+            border-radius: 12px;
+        }
+
+        .News > .news-container > div > .article-text > li > a.classicBtn{
+            padding: 24px;
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .News > .news-container > .home-btn > li > a{
             font-size: 30px;
         }
-
-
-
-
-
-
-
-
-        .footer > .footer-text{
-            margin-top: 4rem;
-            margin-bottom: 2rem;
-
-            margin-left: 4rem;
-            margin-right: 4rem;  
-        }
-        .footer > .footer-text > .sect1 > p{
-            font-size: 16px;
-            padding: 12px 12px;
-        }
-        .footer > .footer-text > .sect1 > .contact-container > h3{
-            margin-top: 5rem;
-            margin-bottom: 44px;
-        }
-        .footer > .footer-text > .sect1 > .contact-container > .contact-container-bottom > p{
-            font-size: 16px;
-        }
-        .footer > .footer-text > .sect1 > .contact-container > .contact-container-top > p{
-            font-size: 16px;
-        }
-
-        div.footer > section.footer-text > article.sect1 > h3{
-            margin-bottom: 24px;
-        }
-        .footer > .footer-text > .sect1{
-            width: 100%;
-        }
-        .footer > .footer-text > .sect2{
-            width: 100%;
-            margin-top: 5rem;
-        }
-        .footer > .footer-text > .sect3{
-            width: 100%;
-            margin-top: 4rem;
-        }
+        
     }
 
 /*DESKTOP*/
     @media (min-width: 900px){
-        body{
-            margin-left: 10rem;
-            margin-right: 10rem;
-        }
-        h1{
-            font-size: 60px;
-        }
-        h2{
-            font-size: 36px;
-        }
-        p{
-            font-size: 20px;
-        }
-        div.footer > section.footer-text > article.sect1 > .contact-container > h3{
-            margin-bottom: 44px;
-            margin-top: 100px;
-        }
-        div.footer > section.footer-text > article.sect1 > h3{
-            margin-top: 44px;
-            margin-bottom: 44px;
-        }
-        div.footer > section.footer-text > article.sect1 > p{
-            font-size: 16px;
-            padding: 12px 12px;
-        }
-        div.footer > section.footer-text > article.sect1 > div.contact-container > div.contact-container-top > p{
-            font-size: 16px;
-        }
-        div.footer > section.footer-text > article.sect1 > div.contact-container > div.contact-container-bottom > p{
-            font-size: 16px;
-        }
-        div.footer > section.footer-text > article.sect2 > h3{
-            margin-top: 24px;
-            margin-bottom: 40px;
-        }
-        div.footer > section.footer-text > article.sect2 > div.garden-info-h3 > h3{
-            margin-top: 70px;
+        .News{
+            background-image: linear-gradient(#012014 16%, rgba(0, 0, 0, 0.5), #012014 98%), url(https://i.imgur.com/7AyZTU4.jpeg);
         }
 
         .News > .news-container{
@@ -443,44 +307,20 @@
             object-fit: cover;
             width: 100%;
             height: 240px;
+            border-radius: 12px;
+        }
+
+        .News > .news-container > div > .article-text > a{
+            padding-top: 24px;
+            margin: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .News > .news-container > .home-btn > li > a{
             font-size: 36px;
         }
-
-
-
-
-
-
-
-
-        .footer > .footer-text{
-            display: flex;
-
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-
-            margin-left: 8rem;
-            margin-right: 8rem;  
-        }
-
-        .footer > .footer-text > .sect1{
-            width: 33%;
-            margin-right: 4rem;
-        }
-        .footer > .footer-text > .sect2{
-            width: 33%;
-            margin-left: 4rem;
-            margin-right: 4rem;
-        }
-        .footer > .footer-text > .sect3{
-            width: 33%;
-            margin-left: 4rem;
-            margin-top: 4rem;
-        }
-
     }
 
     body{
@@ -493,154 +333,15 @@
     }
     div.container{
         width: 100%;
-        background-color: #013220;
+        background-color: #012014;
     }
     a{
         color: yellow;
     }
 
-
-
-
-    div.header{
-        position: absolute;
-        top: 0;
-        height: 8rem;       
-        width: 100%;
-        height: 8rem;
-        background-color: #013220;
-    }
-    #wrapper{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    div.nav-placeholder{
-        height: 8rem;
-        overflow: hidden;
-    }
-    .nav{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-
-        align-items: center;
-        margin: auto;
-
-        width: 100%;
-        max-width: 86vw;
-    }
-    ul.nav-links{
-        list-style: none;
-        display: flex;
-        margin: auto;
-        margin-top: 2rem;
-        padding: 0;
-    }
-    ul.nav-links > li a{
-        white-space: nowrap;
-        text-decoration: none;
-        display: block;
-        font-size: 2vw;
-        font-weight: 600;
-        color: #e0dec4;
-        padding: 1vw 2vw;
-        margin: 0px;
-    }
-    li{
-        display: inline-block;
-    }
-    ul.nav-links > li a, .dropBtn{
-        display: block;
-        padding: 10px;
-        background-color: #013220;
-
-        text-decoration: none;
-        text-align: left;
-        color: #e0dec4;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-    ul.nav-links > li > .active{
-        background-color: #e0dec4;
-        color: black;
-    }
-    ul.nav-links > li a:hover{
-        background-color: #e0dec4;
-        color: black;
-        transition: 0.4s ease;
-    }
-    li a:hover, .dropDown:hover .dropDown-content a:hover{
-        background-color: #e0dec4;
-        color: black;
-        transition: 0.4s ease;
-    }
-    li .dropDown{
-        display: inline-block;
-    }
-    .dropDown-content{
-        /*Hidden by default*/
-        display: none;
-        position: absolute;
-        color: black;
-        background-color: #e0dec4;
-        z-index: 1;
-        margin: 0px;
-    }
-    .dropDown-content a{
-        text-decoration: none;
-        padding: 0.5rem 1rem;
-        color: black;
-        display: block;
-        text-align: left;
-        margin: 0px;
-    }
-    .dropDown-content a:hover{
-        background-color: #e0dec4;
-
-    }
-    .dropDown:hover .dropDown-content{
-        display: block;
-    }
-
-
-
-    .hero-container{
-        margin-top: 8rem;
-        width: 100%;
-        height: 740px;
-        overflow: hidden;
-    }
-    .hero-image{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.5)), url(https://static.wixstatic.com/media/c013d4_c37a02478f584c69a6b99f72fc4528f5~mv2.jpg/v1/fill/w_851,h_638,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c013d4_c37a02478f584c69a6b99f72fc4528f5~mv2.jpg);
-        height: 740px; 
-        width: 100%; 
-        
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .hero-text{
-        position: absolute;
-        top: 66%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    .hero-text > h1{
-        font-weight: 600;
-        color: white;
-        text-align: center;
-    }
-    .hero-text > h2{
-        font-weight: 400;
-        color: white;
-        text-align: center;
-    }
-
-
-
-
+   
     .News{
-        background-color: #013220;
+        background-color: #012014;
         background-repeat: no-repeat;
         background-attachment: static;
         background-size: cover;
@@ -657,14 +358,19 @@
     }
 
     .News > .news-container > .news-story{
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
+
+        text-align: center;
+
+        width: 100%;
         margin-left: 3%;
 
         margin-bottom: 4rem;
     }
     .News > .news-container > div > article{
         text-align: left;
+        border-radius: 12px;
     }
     .News > .news-container > div > article > h1{
         margin-bottom: 1rem;
@@ -683,105 +389,16 @@
         color: #e0dec4;
         padding: 10px 20px;
         cursor: pointer;
+
+        background-color: #01322056;
+        border: 2px solid #2df64e;
+        border-radius: 8px;
     }
     .News > .news-container > .home-btn > li > a:hover{
-        background-color: #e0dec4;
-        color: black;
+        background-color: #01322056;
+        color: #2df64e;
+
+        border-radius: 8px;
     }
 
-
-
-
-    .svg-icon-email{
-        float: left;
-        padding-right: 12px;
-        padding-top: 14px;
-    }
-    .svg-icon-facebook{
-        float: left;
-        padding-right: 12px;
-    }
-
-
-
-    .footer{
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        background-color: #013220;
-        color: #e0dec4;
-    }
-    .footer > .footer-text{
-        flex-wrap: nowrap;
-        width: 100%;
-
-        align-content: center;
-    }
-
-
-
-
-    .footer > .footer-text > .sect1 > h1{
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-    }
-    .footer > .footer-text > .sect1 > .p{
-        margin-bottom: 1rem;
-    }
-    .footer > .footer-text > .sect1 > .contact-container{
-        margin-bottom: 5rem;
-    }
-    .footer > .footer-text > .sect1 > .contact-container > .contact-container-top{
-        display: flex;
-        align-items: center;
-        height: 2rem;
-        margin-bottom: 1.6rem;
-    }
-    .footer > .footer-text > .sect1 > .contact-container > .contact-container-bottom{
-        display: flex;
-        align-items: center;
-        height: 2rem;
-        margin-bottom: 1.6rem;
-    }
-
-
-
-
-    .footer > .footer-text > .sect2 > h1{
-        margin-top: 4rem;
-        margin-bottom: 1rem;
-    }
-    .footer > .footer-text > .sect2 > p{
-        margin-bottom: 1rem;
-    }
-
-
-    .footer > .footer-text > .sect3 > h1{
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-    }
-    .footer > .footer-text > .sect3 > p{
-        margin-bottom: 1rem;
-    }
-
-
-
-/*FOOTER NAV*/
-    .footer-nav > li a{
-        display: block;
-        padding: 10px;
-        background-color: #013220;
-        width: 100%;
-
-        text-decoration: none;
-        text-align: left;
-        color: #e0dec4;
-        padding: 12px 8px;
-        margin: 4px;
-    }
-    .footer-nav > li a:hover{
-        background-color: #e0dec4;
-        color: black;
-        transition: 0.4s ease;
-    }
 </style>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Hours | Pleasent Village Community Garden</title>
+    <title>Garden Photos | Pleasent Village Community Garden</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -15,7 +15,7 @@
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li class="dropDown">
-                        <a class="dropBtn" href="javascript:void(0)">About</a>
+                        <a class="dropBtn, active" href="javascript:void(0)">About</a>
                         <div class="dropDown-content">
                             <a href="history.html">History</a>
                             <a href="garden-photos.html">Garden Photos</a>
@@ -24,7 +24,7 @@
                     </li>
                         <li><a href="compost.html">Compost</a></li>
                             <li class="dropDown">
-                                <a class="dropBtn, active" href="javascript:void(0)" href="#garden-information">Garden Information</a>
+                                <a class="dropBtn" href="javascript:void(0)" href="#garden-information">Garden Information</a>
                                 <div class="dropDown-content">
                                     <a href="hours.html">Hours</a>
                                     <a href="events.html">Events</a>
@@ -52,14 +52,17 @@
 
 
         <main>
-            <div class="hours">
-                <h1>Open Hours</h1>
-                <p>During open hours, everyone is welcome to visit the garden!</p>
-                <p>Open hours are every Saturday and Sunday from <b>10am to 2pm</b>, starting in early April and ending in late October.</p>
+            <div class="garden-photos">
+                <h1>Garden Photos</h1>
             </div>
-            <div class="hours-img">
-                <img src="https://files.catbox.moe/ghftem.HEIC">
-            </div>
+            <section class="section-format">
+                <div class="bottom-left-text"><h2>Image Description</h2></div>
+                <img src="https://static.wixstatic.com/media/c013d4_2dd16d18057e4f40bf5bc2b537de8c9d~mv2.jpg/v1/fill/w_630,h_630,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c013d4_2dd16d18057e4f40bf5bc2b537de8c9d~mv2.jpg">
+            </section>
+            <section class="section-format">
+                <div class="bottom-left-text"><h2>Image Description</h2></div>
+                <img src="https://i.postimg.cc/G2DQgQDz/IMG-3142.avif">
+            </section>
         </main>
 
 
@@ -145,7 +148,7 @@
             margin-left: 6rem;
             margin-right: 6rem;
         }
-        .hours{
+        .garden-photos{
             margin-top: 6rem;
             margin-bottom: 6rem;
         }
@@ -161,30 +164,10 @@
 
 
 
-        main{
+        main > .section-format > p{
             margin-left: 6rem;
             margin-right: 6rem;
-        }
-
-
-
-        .hours-img{
-            margin-bottom: 4rem;
-        }
-        .hours-img > img{
-            height: 200px;
-
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-
-            object-fit: cover;
-            padding-bottom: 10px;
-        }
-
-
-
- 
+        } 
     }
 
 /*TABLETS*/
@@ -193,7 +176,7 @@
             margin-left: 6rem;
             margin-right: 6rem;
         }
-        .hours{
+        .garden-photos{
             margin-top: 6rem;
             margin-bottom: 6rem;
         }
@@ -209,30 +192,10 @@
 
 
 
-        main{
+        main > .section-format > p{
             margin-left: 6rem;
             margin-right: 6rem;
-        }
-
-
-
-        .hours-img{
-            width: 100%;
-            margin-bottom: 6rem;
-        }
-        .hours-img > img{
-            height: 300px;
-
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-
-            object-fit: cover;
-            padding-bottom: 10px;
-        }
-
-
- 
+        } 
     }
 
 /*DESKTOP*/
@@ -241,7 +204,7 @@
             margin-left: 10rem;
             margin-right: 10rem;
         }
-        .hours{
+        .garden-photos{
             margin-top: 8rem;
             margin-bottom: 6rem;
         }
@@ -257,33 +220,10 @@
 
 
 
-        main{
+        main > .section-format > p{
             margin-left: 10rem;
             margin-right: 10rem;
         }
-
-
-
-        .hours-img{
-            margin-bottom: 8rem;
-        }
-        .hours-img > img{
-            height: 400px;
-
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-
-            object-fit: cover;
-            padding: 10px;
-
-            border-radius: 20px;
-        }
-
-
-
- 
-
     }
 
     body{
@@ -299,36 +239,52 @@
         background-color: #012014;
     }
 
+    .section-format{
+        position: relative;
+        color: white;
+        text-align: center;
+    }
+
+    /* text positioning and fade-in over img */
+    .bottom-left-text{
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+
+        background-color: rgba(0, 0, 0, 0.697);
+        border-radius: 6px;
+
+        opacity: 0.00;
+	    transition: 1s all ease-in-out;
+	    -moz-transition: 1s all ease-in-out;
+	    -webkit-transition: 1s all ease-in-out;
+    }
+    .bottom-left-text > h2{
+        font-size: 28px;
+    }
+    /* text fade-in when hovering over image */
+    .section-format:hover .bottom-left-text{
+        opacity: 1.00;
+    }
+
+    .section-format > img{
+        object-fit: cover;
+        width: 100%;
+        height: 100vh;
+    }
 
 
-
- 
-
-
-
- 
-
-
-
-    .hours > h1{
+    .garden-photos > h1{
         text-align: center;
         padding-bottom: 56px;
 
         text-align: center;
     }
-    .hours > p{
-        padding-top: 3px;
-        padding-bottom: 3px;
-
+    main > .section-format > h2{
         text-align: center;
     }
-
-
-
-
-
-
- 
-
 
 </style>
