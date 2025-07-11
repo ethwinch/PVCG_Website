@@ -1,0 +1,533 @@
+/*Style Sheet*/
+
+/*news-story1 image variable*/
+:root{
+    --lime: #2df64e;
+    --forestGreen: #043b1eda;
+    --forestGreenFaded: #01322056;
+    --darkGreen: #012014;
+    --cream: #e0dec4;
+    /*--newsIMG1: url(https://i.imgur.com/7AyZTU4.jpeg);*/
+}
+
+
+
+
+
+p, h2, a{
+    font-family: Verdana;
+    line-height: 1.5;
+}
+
+
+
+/* NAV */
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    align-items: center;
+    margin: auto;
+
+    width: 100%;
+    max-width: 86vw;
+}
+ul.nav-links{
+    list-style: none;
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0;
+}
+ul.nav-links > li a{
+    white-space: nowrap;
+    text-decoration: none;
+    display: block;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: var(--cream);
+    padding: 1vw 2vw;
+    margin: 0px;
+}
+li{
+    display: inline-block;
+    margin: 0rem 1rem;
+}
+ul.nav-links > li a, .dropBtn{
+    display: block;
+    padding: 10px;
+
+    text-decoration: none;
+    text-align: left;
+    color: var(--cream);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+ul.nav-links > li > .active{
+    background-color:  var(--darkGreen);
+    color: var(--lime);
+
+    border: 2px solid  var(--darkGreen);
+    border-radius: 8px;
+}
+ul.nav-links > li a:hover{
+    transition: 0.4s ease;
+
+    color: var(--lime);
+    border-radius: 8px;
+}
+li a:hover, .dropDown:hover .dropDown-content a:hover{
+    transition: 0.4s ease;
+
+    background-color:  var(--darkGreen);
+    color: var(--lime);
+}
+li .dropDown{
+    display: inline-block;
+}
+.dropDown-content{
+    /*Hidden by default*/
+    display: none;
+    position: absolute;
+    color: var(--lime);
+    background-color:  var(--darkGreen);
+    z-index: 1;
+    margin: 0px;
+
+    border: 2px solid  var(--darkGreen);
+    border-radius: 8px;
+}
+.dropDown-content a{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: black;
+    display: block;
+    text-align: left;
+    margin: 0px;
+}
+.dropDown-content a:hover{
+    background-color: var(--cream);
+
+}
+.dropDown:hover .dropDown-content{
+    display: block;
+}
+
+
+
+
+/* Header */
+
+div.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+}
+#wrapper{
+    margin-left: auto;
+    margin-right: auto;
+}
+div.nav-placeholder{
+    height: 6rem;
+    overflow: hidden;
+}
+
+
+
+
+
+/* HERO IMAGE */
+.hero-container{
+    margin-top: 0rem;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.77), rgba(0, 0, 0, 0.5), var(--darkGreen) 98%), url(https://i.imgur.com/7AyZTU4.jpeg);
+    height: 900px; 
+    width: 100%; 
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-text{
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-text > h1{
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}
+.hero-text > h2{
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+/* Buttons */
+.classicBtn{
+    font-weight: 600;
+
+    text-decoration: none;
+    text-align: center;
+    color: var(--cream);
+    padding: 10px 20px;
+    cursor: pointer;
+
+    background-color:  var(--darkGreen)56;
+    border: 2px solid var(--lime);
+    border-radius: 8px;
+}
+.classicBtn:hover{
+    background-color:  var(--darkGreen)56;
+    color: var(--lime);
+
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.svg-icon-email{
+    float: left;
+    padding-right: 12px;
+    padding-top: 14px;
+}
+.svg-icon-facebook{
+    float: left;
+    padding-right: 12px;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    background-color:  var(--darkGreen);
+    color: var(--cream);
+}
+.footer > .footer-text{
+    flex-wrap: nowrap;
+    width: 100%;
+
+    align-content: center;
+}
+
+
+
+
+.footer > .footer-text > .sect1 > h1{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.footer > .footer-text > .sect1 > .p{
+    margin-bottom: 1rem;
+}
+.footer > .footer-text > .sect1 > .contact-container{
+    margin-bottom: 5rem;
+}
+.footer > .footer-text > .sect1 > .contact-container > .contact-container-top{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 1.6rem;
+}
+.footer > .footer-text > .sect1 > .contact-container > .contact-container-bottom{
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+
+
+
+.footer > .footer-text > .sect2 > h1{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.footer > .footer-text > .sect2 > p{
+    margin-bottom: 1rem;
+}
+
+
+.footer > .footer-text > .sect3 > h1{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.footer > .footer-text > .sect3 > p{
+    margin-bottom: 1rem;
+}
+
+
+
+/*FOOTER NAV*/
+.footer-nav > li a{
+    display: block;
+    padding: 10px;
+    background-color:  var(--darkGreen)56;
+    width: 100%;
+
+    text-decoration: none;
+    text-align: left;
+    color: var(--cream);
+    padding: 12px 8px;
+    margin: 4px;
+}
+.footer-nav > li a:hover{
+    color: var(--lime);
+    border-radius: 8px;
+    transition: 0.4s ease;
+}
+
+
+
+
+
+
+
+
+/* VIEW-PORT */
+/* DESKTOP */
+@media (min-width: 900px){
+    body{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    h1{
+        font-size: 60px;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 36px;
+        font-weight: 800;
+    }
+    p{
+        font-size: 20px;
+    }
+    div.footer > section.footer-text > article.sect1 > .contact-container > h3{
+        margin-bottom: 44px;
+        margin-top: 100px;
+        font-weight: 800;
+    }
+    div.footer > section.footer-text > article.sect1 > h3{
+        margin-top: 44px;
+        margin-bottom: 44px;
+        font-weight: 800;
+    }
+    div.footer > section.footer-text > article.sect1 > p{
+        font-size: 16px;
+        padding: 12px 12px;
+    }
+    div.footer > section.footer-text > article.sect1 > div.contact-container > div.contact-container-top > p{
+        font-size: 16px;
+    }
+    div.footer > section.footer-text > article.sect1 > div.contact-container > div.contact-container-bottom > p{
+        font-size: 16px;
+    }
+    div.footer > section.footer-text > article.sect2 > h3{
+        margin-top: 24px;
+        margin-bottom: 40px;
+        font-weight: 800;
+    }
+    div.footer > section.footer-text > article.sect2 > div.garden-info-h3 > h3{
+        margin-top: 70px;
+        font-weight: 800;
+    }
+.footer > .footer-text{
+    display: flex;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    margin-left: 8rem;
+    margin-right: 8rem;  
+}
+
+.footer > .footer-text > .sect1{
+    width: 33%;
+    margin-right: 4rem;
+}
+.footer > .footer-text > .sect2{
+    width: 33%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+.footer > .footer-text > .sect3{
+    width: 33%;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*TABLETS*/
+@media (min-width: 600px) and (max-width: 900px){
+    body{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    h1{
+        font-size: 46px;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 32px;
+        font-weight: 800;
+    }
+    p{
+        font-size: 24px;
+    }
+.footer > .footer-text{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    margin-left: 4rem;
+    margin-right: 4rem;  
+}
+.footer > .footer-text > .sect1 > p{
+    font-size: 16px;
+    padding: 12px 12px;
+}
+.footer > .footer-text > .sect1 > .contact-container > h3{
+    margin-top: 5rem;
+    margin-bottom: 44px;
+    font-weight: 800;
+}
+.footer > .footer-text > .sect1 > .contact-container > .contact-container-bottom > p{
+    font-size: 16px;
+}
+.footer > .footer-text > .sect1 > .contact-container > .contact-container-top > p{
+    font-size: 16px;
+}
+
+div.footer > section.footer-text > article.sect1 > h3{
+    margin-bottom: 24px;
+    font-weight: 800;
+}
+.footer > .footer-text > .sect1{
+    width: 100%;
+}
+.footer > .footer-text > .sect2{
+    width: 100%;
+    margin-top: 5rem;
+}
+.footer > .footer-text > .sect2 > h3{
+    font-weight: 800;
+}
+.footer > .footer-text > .sect3{
+    width: 100%;
+    margin-top: 4rem;
+}
+div.footer > section.footer-text > article.sect2 > div.garden-info-h3 > h3{
+    font-weight: 800;
+}
+
+}
+
+
+
+
+/*PHONES*/
+@media (max-width: 600px){
+    body{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 800;
+    }
+    p{
+        font-size: 18px;
+    }
+
+.footer > .footer-text{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+
+    margin-left: 4rem;
+    margin-right: 4rem;  
+}
+
+.footer > .footer-text > .sect1 > .contact-container > h3{
+    margin-top: 44px;
+    margin-bottom: 44px;
+    font-weight: 800;
+}
+div.footer > section.footer-text > article.sect1 > h3{
+    margin-bottom: 44px;
+    font-weight: 800;
+}
+.footer > .footer-text > .sect1 > p{
+    padding: 12px 12px;
+    font-size: 16px;
+}
+.footer > .footer-text > .sect1 > .contact-container > .contact-container-bottom > p{
+    font-size: 16px;
+}
+.footer > .footer-text > .sect1 > .contact-container > .contact-container-top > p{
+    font-size: 16px;
+}
+
+.footer > .footer-text > .sect1{
+    width: 100%;
+}
+.footer > .footer-text > .sect1 > h3{
+    font-weight: 800;
+}
+
+.footer > .footer-text > .sect2{
+    width: 100%;
+    margin-top: 5rem;
+}
+.footer > .footer-text > .sect2 > h3{
+    font-weight: 800;
+}
+.footer > .footer-text > .sect2 > .garden-info-h3 > h3{
+    font-weight: 800;
+}
+
+.footer > .footer-text > .sect3{
+    width: 100%;
+    margin-top: 4rem;
+}
+.footer > .footer-text > .sect3 > h3{
+    font-weight: 800;
+}
+}
+
