@@ -385,17 +385,11 @@ div.nav-placeholder{
 
 
 
-
-
-
-
-
-
 /*TABLETS*/
 @media (min-width: 600px) and (max-width: 900px){
     body{
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
     h1{
         font-size: 46px;
@@ -412,8 +406,8 @@ div.nav-placeholder{
     margin-top: 4rem;
     margin-bottom: 2rem;
 
-    margin-left: 4rem;
-    margin-right: 4rem;  
+    margin-left: 2rem;
+    margin-right: 2rem;  
 }
 .footer > .footer-text > .sect1 > p{
     font-size: 16px;
@@ -461,8 +455,12 @@ div.footer > section.footer-text > article.sect2 > div.garden-info-h3 > h3{
 /*PHONES*/
 @media (max-width: 600px){
     body{
-        margin-left: 6rem;
-        margin-right: 6rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    main{
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     h1{
         font-size: 40px;
@@ -476,12 +474,42 @@ div.footer > section.footer-text > article.sect2 > div.garden-info-h3 > h3{
         font-size: 18px;
     }
 
+/* NAV */
+div.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+}
+.nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    align-items: center;
+    margin: auto;
+
+    width: 100%;
+}
+ul.nav-links{
+    list-style: none;
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0;
+}
+ul.nav-links > li a{
+    font-size: 0.6rem;
+}
+
+
+
 .footer > .footer-text{
     margin-top: 4rem;
     margin-bottom: 2rem;
 
-    margin-left: 4rem;
-    margin-right: 4rem;  
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;  
 }
 
 .footer > .footer-text > .sect1 > .contact-container > h3{

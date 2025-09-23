@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
     <title>Garden Photos | Pleasent Village Community Garden</title>
+    <link rel="icon" type="image/x-icon" href="https://postimg.cc/Nywc48KV">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -55,35 +57,36 @@
             <div class="garden-photos">
                 <h1>Garden Photos</h1>
             </div>
-            <section class="section-format">
-                <div class="bottom-left-text"><h2>Pumpkin Patch</h2></div>
-                <img src="https://static.wixstatic.com/media/c013d4_2dd16d18057e4f40bf5bc2b537de8c9d~mv2.jpg/v1/fill/w_630,h_630,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c013d4_2dd16d18057e4f40bf5bc2b537de8c9d~mv2.jpg" alt="Chickens stand in a pumpkin patch.">
-            </section>
-            <section class="section-format">
-                <div class="bottom-left-text"><h2>Garden in the Summertime</h2></div>
-                <img src="https://i.postimg.cc/G2DQgQDz/IMG-3142.avif" alt="A section of the garden full of trees, interspersed with orange tiger lilies and a garden plot covered by wire mesh.">
-            </section>
-            <section class="section-format">
-                <div class="bottom-left-text"><h2>Chicken Coop</h2></div>
-                <img src="https://i.postimg.cc/d3jGFkJP/IMG-3167.avif" alt="Four chickens and a chicken coop inside a large wire enclosure.">
-                <!--"Three chickens stand on the ledge of a chicken coop, with a fourth chicken further away on the ground. The chickens and coop are contained in a wire fence enclosure."-->
-            </section>
-            <section class="section-format">
-                <div class="bottom-left-text"><h2>Chickens</h2></div>
-                <img src="https://i.postimg.cc/524yTKHt/IMG-3162.avif" alt="Close up of the chickens in front of their coop.">
-            </section>
-            <section class="section-format">
-                <div class="bottom-left-text"><h2>Plots</h2></div>
-                <img src="https://i.postimg.cc/gJq1CsLY/IMG-3136.avif" alt="Two garden plots are on the left with a mesh-wire exterior full of green plants. More garden plots of a similar description sit further in the background.">
-            </section>
-            <section class="section-format">
-                <div class="bottom-left-text"><h2>Wheel Barrow</h2></div>
-                <img src="https://i.postimg.cc/J0scN4L9/IMG-3145.avif" alt="A wheel barrow full of wood, flower pots and construction tools surrounded by plants.">
-            </section>
-            <section class="section-format">
-                <div class="bottom-left-text"><h2>Center</h2></div>
-                <img src="https://i.postimg.cc/d00Bs9fs/IMG-3152.avif" alt="A tree and shrubs grow in an area encircled by a pebble path.">
-            </section>
+            <div class="gallery">
+                <a target="_blank" href="https://i.postimg.cc/G2DQgQDz/IMG-3142.avif">
+                    <img src="https://i.postimg.cc/G2DQgQDz/IMG-3142.avif" alt="A section of the garden full of trees, interspersed with orange tiger lilies and a garden plot covered by wire mesh.">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://i.postimg.cc/d3jGFkJP/IMG-3167.avif">
+                    <img src="https://i.postimg.cc/d3jGFkJP/IMG-3167.avif" alt="Four chickens and a chicken coop inside a large wire enclosure.">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://i.postimg.cc/524yTKHt/IMG-3162.avif">
+                    <img src="https://i.postimg.cc/524yTKHt/IMG-3162.avif" alt="Close up of the chickens in front of their coop.">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://i.postimg.cc/gJq1CsLY/IMG-3136.avif">
+                    <img src="https://i.postimg.cc/gJq1CsLY/IMG-3136.avif" alt="Two garden plots are on the left with a mesh-wire exterior full of green plants. More garden plots of a similar description sit further in the background.">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://i.postimg.cc/J0scN4L9/IMG-3145.avif">
+                    <img src="https://i.postimg.cc/J0scN4L9/IMG-3145.avif" alt="A wheel barrow full of wood, flower pots and construction tools surrounded by plants.">
+                </a>
+            </div>
+            <div class="gallery">
+                <a target="_blank" href="https://i.postimg.cc/d00Bs9fs/IMG-3152.avif">
+                    <img src="https://i.postimg.cc/d00Bs9fs/IMG-3152.avif" alt="A tree and shrubs grow in an area encircled by a pebble path.">
+                </a>
+            </div>
         </main>
 
 
@@ -147,7 +150,7 @@
                         <a href="events.html">Events</a>
                         <a href="hours.html">Hours</a>
                         <a href="rules.html">Garden Rules</a>
-                        <a href="garden-officers.html">Garden Officers</a>
+                        <a href="officers.html">Garden Officers</a>
                         <a href="garden-member-rules-and-requirements.html">Member Rules & Requirements</a>
                         <a href="garden-member-responsibilities.html">Member Responsibilities</a>
                     </li>
@@ -163,56 +166,49 @@
 
 <style>
 
+    .gallery{
+        margin: 5px;
+        float: left;
+        /*width: 320px;*/
+        border: 1px solid var(--forestGreen);
+    }
+    .gallery:hover{
+        border: 1px solid var(--cream);
+    }
+    .gallery img{
+        width: 100%;
+        height: auto;
+    }
+    main{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
 /*PHONES*/
     @media (max-width: 600px){
-        body{
-            margin-left: 6rem;
-            margin-right: 6rem;
-        }
         .garden-photos{
             margin-top: 6rem;
             margin-bottom: 6rem;
         }
-        h1{
-            font-size: 40px;
+        main{
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
         }
-        h2{
-            font-size: 28px;
-        }
-        p{
-            font-size: 18px;
-        }
-
-
-
         main > .section-format > p{
-            margin-left: 6rem;
-            margin-right: 6rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
         } 
     }
 
 /*TABLETS*/
     @media (min-width: 600px) and (max-width: 900px){
-        body{
-            margin-left: 6rem;
-            margin-right: 6rem;
-        }
         .garden-photos{
             margin-top: 6rem;
             margin-bottom: 6rem;
         }
-        h1{
-            font-size: 46px;
+        .gallery{
+            width: 100%;
         }
-        h2{
-            font-size: 32px;
-        }
-        p{
-            font-size: 24px;
-        }
-
-
-
         main > .section-format > p{
             margin-left: 6rem;
             margin-right: 6rem;
@@ -221,26 +217,13 @@
 
 /*DESKTOP*/
     @media (min-width: 900px){
-        body{
-            margin-left: 10rem;
-            margin-right: 10rem;
-        }
         .garden-photos{
             margin-top: 8rem;
             margin-bottom: 6rem;
         }
-        h1{
-            font-size: 60px;
+        .gallery{
+            width: 32%;
         }
-        h2{
-            font-size: 36px;
-        }
-        p{
-            font-size: 20px;
-        } 
-
-
-
         main > .section-format > p{
             margin-left: 10rem;
             margin-right: 10rem;
@@ -259,44 +242,6 @@
         width: 100%;
         background-color: var(--darkGreen);
     }
-
-    .section-format{
-        position: relative;
-        color: white;
-        text-align: center;
-    }
-
-    /* text positioning and fade-in over img */
-    .bottom-left-text{
-        position: absolute;
-        bottom: 12px;
-        left: 12px;
-
-        padding-left: 12px;
-        padding-right: 12px;
-
-        background-color: rgba(0, 0, 0, 0.697);
-        border-radius: 6px;
-
-        opacity: 0.00;
-	    transition: 1s all ease-in-out;
-	    -moz-transition: 1s all ease-in-out;
-	    -webkit-transition: 1s all ease-in-out;
-    }
-    .bottom-left-text > h2{
-        font-size: 28px;
-    }
-    /* text fade-in when hovering over image */
-    .section-format:hover .bottom-left-text{
-        opacity: 1.00;
-    }
-
-    .section-format > img{
-        object-fit: cover;
-        width: 100%;
-        height: 100vh;
-    }
-
 
     .garden-photos > h1{
         text-align: center;

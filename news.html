@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
     <title>News | Pleasent Village Community Garden</title>
+    <link rel="icon" type="image/x-icon" href="https://postimg.cc/Nywc48KV">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -18,7 +20,7 @@
                         <a class="dropBtn" href="javascript:void(0)">About</a>
                         <div class="dropDown-content">
                             <a href="history.html">History</a>
-                            <a href="#garden-photos.html">Garden Photos</a>
+                            <a href="garden-photos.html">Garden Photos</a>
                             <a href="partners.html">Partners & Sponsors</a>
                         </div>
                     </li>
@@ -56,15 +58,15 @@
         <main>
         <section class="News">
             <div class="news-container">
-                <h1>What's New?</h1>
+                <h1 data-i18n="whats-new"></h1>
                 <div class="news-story">
                     <article>
                         <div class="news-img">
-                            <img src="https://i.imgur.com/7AyZTU4.jpeg" alt="">
+                            <img src="https://i.postimg.cc/mr940WTt/Compost-Party-Flyer1.jpg" alt="">
                         </div>
                         <div class="article-text">
-                            <h2>Green Thumb Dates & Deadlines</h2>
-                            <p>The Harvest Fair Competition Submission deadline is <b>Friday, August 14th</b>. To learn more...</p>
+                            <h2>Compost Thank You Party</h2>
+                            <p>The compost team has been able to continue the compost operation for several years. We'd like to show our gratitude to the garden members, volunteers, neighbors and the compost community. It's gonna be fun with demo cooking and music! Please come join us!</p>
                             <a class="classicBtn" href="news-story1.html">Read More</a>
                         </div>
                     </article>
@@ -174,7 +176,7 @@
                     <a href="events.html">Events</a>
                     <a href="hours.html">Hours</a>
                     <a href="rules.html">Garden Rules</a>
-                    <a href="garden-officers.html">Garden Officers</a>
+                    <a href="officers.html">Garden Officers</a>
                     <a href="garden-member-rules-and-requirements.html">Member Rules & Requirements</a>
                     <a href="garden-member-responsibilities.html">Member Responsibilities</a>
                 </li>
@@ -329,7 +331,6 @@
 
     body{
         max-width: 100% !important;
-        /*centers page*/
         margin: auto;
 
         color: var(--cream) !important;
@@ -406,3 +407,7 @@
     }
 
 </style>
+
+<script src="es-script.js">
+    updateContent(langData);
+</script>

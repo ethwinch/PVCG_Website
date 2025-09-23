@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+<html lang="en-US">
 <head>
     <title>News Story | Pleasent Village Community Garden</title>
+    <link rel="icon" type="image/x-icon" href="https://postimg.cc/Nywc48KV">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -18,7 +20,7 @@
                         <a class="dropBtn" href="javascript:void(0)">About</a>
                         <div class="dropDown-content">
                             <a href="history.html">History</a>
-                            <a href="#garden-photos.html">Garden Photos</a>
+                            <a href="garden-photos.html">Garden Photos</a>
                             <a href="partners.html">Partners & Sponsors</a>
                         </div>
                     </li>
@@ -60,14 +62,34 @@
                 <div class="news-story">
                     <article>
                         <div class="news-img">
-                            <img src="https://i.imgur.com/7AyZTU4.jpeg" alt="">
+                            <img src="https://i.postimg.cc/CK8JySdB/compost-Activity1.jpg" alt="">
                         </div>
                         <div class="article-text">
-                            <h2>Green Thumb Dates & Deadlines</h2>
-                            <p>The Harvest Fair Competition Submission deadline is <b>Friday, August 14th</b>. Blah Blah blahblah lorem ipsum dolor amet...</p>
-                            <a class="classicBtn" href="index.html">Return home</a>
+                            <h2>Compost Party Thank You</h2>
+                            <p>The compost team has been able to continue the compost operation for several years. We'd like to show our gratitude to the garden members, volunteers, neighbors and the compost community. It's gonna be fun with demo cooking and music! Please come join us!</p>
+                            <p>Saturday, September 27th, 2-5pm at the garden</p>
+                            <br>
+                            <p><b>2pm</b></p>
+                            <p>Sustainable Cooking Demo by Daria</p>
+                            <br>
+                            <p><b>3pm</b></p>
+                            <p>Music Performance by Kevin Nathaniel & Friends</p>
+                            <br>
+                            <p>PVCG Compost Team thanks you all for your awareness of sustainability, food scrap contributions, and volunteer work.</p>
+                            <p>Composting is a crucial act in the urban life. But let's think before we throw away veggies. The holistic-approach chef, Daria, will show us how to reduce waste in our kitchen.</p>
+                            <p>After tasting Daria's demo cooking, we will be dancing to the Mbira Maestro, Kevin Nathaniel's joyous music!</p>
+                            <p><i>FREE! Small bags of compost give-away!</i></p>
+                            <br>
+                            <img src="https://i.postimg.cc/mr940WTt/Compost-Party-Flyer1.jpg" style="float:left; width:48%;"/>
+                            <img src="https://i.postimg.cc/5t857gk8/Compost-Party-Flyer2.jpg"style="float:right; width:48%;"/>
+                            <br>
+                            <img src="https://i.postimg.cc/CK8JySdB/compost-Activity1.jpg" style="float:left; width:98%;"/>
+                            <img src="https://i.postimg.cc/5Nt34w6M/compost-Activity2.jpg" style="float:left; width:48%;"/>
+                            <img src="https://i.postimg.cc/2Sb7vrQc/compost-Activity3.jpg" style="float:left; width:48%;"/>
+                            <br>
                         </div>
                     </article>
+                    <a class="classicBtn" href="index.html">Return home</a>
                 </div>
             </div>
         </section>
@@ -134,7 +156,7 @@
                     <a href="events.html">Events</a>
                     <a href="hours.html">Hours</a>
                     <a href="rules.html">Garden Rules</a>
-                    <a href="garden-officers.html">Garden Officers</a>
+                    <a href="officers.html">Garden Officers</a>
                     <a href="garden-member-rules-and-requirements.html">Member Rules & Requirements</a>
                     <a href="garden-member-responsibilities.html">Member Responsibilities</a>
                 </li>
@@ -182,6 +204,18 @@
         .News > .news-container > li > a{
             font-size: 24px;
         }
+
+        .classicBtn{
+            margin-top: 4rem;
+            margin-left: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .News > .news-container > div > article > .article-text > img{
+            width: 100%;
+            padding: 0.5vw;
+        }
     }
 
 /*TABLETS*/
@@ -200,6 +234,7 @@
 
         .News > .news-container > .news-story > article > .article-text{
             padding-bottom: 4rem;
+            text-align: center;
         }
 
         .News > .news-container > div > article > .article-text{
@@ -218,12 +253,16 @@
             border-radius: 12px;
         }
 
-        .News > .news-container > div > .article-text > li > a.classicBtn{
-            padding: 24px;
-            margin: 0;
-            position: absolute;
+        .classicBtn{
+            margin-top: 4rem;
+            margin-left: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        .News > .news-container > div > article > .article-text > img{
+            padding: 0.5vw;
+            width: 100%;
         }
         
     }
@@ -249,9 +288,9 @@
         .News > .news-container > div > article > .article-text{
             text-align: center;
 
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-bottom: 40px;
+            padding-left: 12rem;
+            padding-right: 12rem;
+            padding-bottom: 4rem;
         }
         .News > .news-container > .news-story > article > .news-img{
             object-fit: cover;
@@ -269,6 +308,17 @@
             position: absolute;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+
+        .classicBtn{
+            margin-top: 4rem;
+            margin-left: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .News > .news-container > div > article > .article-text > img{
+            padding: 0.35vw;
         }
     }
 
@@ -313,13 +363,13 @@
         text-align: center;
 
         width: 100%;
-        margin-left: 3%;
 
         margin-bottom: 4rem;
     }
     .News > .news-container > div > article{
         text-align: left;
         border-radius: 12px;
+        padding-bottom: 4rem;
     }
     .News > .news-container > div > article > h1{
         margin-bottom: 1rem;
